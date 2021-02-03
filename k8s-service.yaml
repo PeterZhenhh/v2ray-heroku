@@ -4,8 +4,8 @@ metadata:
   name: service       # Zarvis ingress looking for name 'service' by default
 spec:
   ports:
-  - name: http
+  - protocol: TCP
     port: 8080        # Zarvis ingress looking for port '8080' by default
     targetPort: 80  # Flask application default port
   selector:
-    app: flask-hello-world-app
+    app: v2ray-paas
