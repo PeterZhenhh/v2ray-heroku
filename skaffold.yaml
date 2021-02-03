@@ -2,7 +2,7 @@ apiVersion: skaffold/v1
 kind: Config
 build:
   artifacts:
-  - image: zarvis/v2ray-paas
+  - image: v2ray-paas
 deploy:
   kubectl:
     manifests:
