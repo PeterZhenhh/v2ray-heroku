@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: example-service
+spec:
+  selector:
+    app: v2ray-paas
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
