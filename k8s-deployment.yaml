@@ -1,18 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-deployment
+  name: v2ray-paas
 spec:
   selector:
     matchLabels:
-      app: example
-  replicas: 1
+      app: v2ray-paas
+  replicas: 2
   template:
     metadata:
       labels:
-        app: example
+        app: v2ray-paas
     spec:
       containers:
-      - name: example-server
-        image: zarvis/v2ray-paas
-        imagePullPolicy: IfNotPresent
+      - name: v2ray-paas
+        image: v2ray-paas-img
