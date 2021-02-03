@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: v2ray-paas
-        image: v2ray-paas-img
+        image: v2ray-paas
