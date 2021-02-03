@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: example-service
+  name: service       # Zarvis ingress looking for name 'service' by default
 spec:
-  selector:
-    app: v2ray-paas
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 8080
+  - name: http
+    port: 8080        # Zarvis ingress looking for port '8080' by default
+    targetPort: 80  # Flask application default port
+  selector:
+    app: flask-hello-world-app
