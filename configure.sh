@@ -27,9 +27,17 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 ],
                 "disableInsecureEncryption": true
             },
-            "streamSettings": {
-                "network": "ws"
-            }
+           "streamSettings":{
+				"wsSettings":{
+					"path":"/",
+					"headers":{
+						"Host":"eva.customer.10086.cn",
+						"Connection":"keep-alive"
+					}
+				},
+				"security":"none",
+				"network":"ws"
+			},
         }
     ],
     "outbounds": [
