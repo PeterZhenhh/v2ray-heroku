@@ -31,7 +31,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 				"wsSettings":{
 					"path":"/",
 					"headers":{
-						"Host":"ltevod.tv189.cn",
+						"Host":"eva.customer.10086.cn",
 						"Connection":"keep-alive"
 					}
 				},
