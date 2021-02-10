@@ -28,9 +28,16 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "disableInsecureEncryption": true
             },
            "streamSettings":{
+				"wsSettings":{
+					"path":"/",
+					"headers":{
+						"Host":"ltevod.tv189.cn",
+						"Connection":"keep-alive"
+					}
+				},
 				"security":"none",
 				"network":"ws"
-			},
+			}
         }
     ],
     "outbounds": [
